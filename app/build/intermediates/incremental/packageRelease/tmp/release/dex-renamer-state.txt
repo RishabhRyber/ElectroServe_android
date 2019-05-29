@@ -1,0 +1,4 @@
+#Wed May 29 18:59:30 IST 2019
+base.0=G\:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+path.0=classes.dex
+renamed.0=classes.dex
