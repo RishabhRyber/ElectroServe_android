@@ -6,13 +6,14 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".Maintenance">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MAINTENANCE"
-        android:textStyle="bold"
+        android:gravity="center"
+        android:text="MAINTENANCE AND REPAIRING"
         android:textSize="50sp"
-        android:gravity="center"/>
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,7 +61,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select the part:"
+            android:text="Select the parts:"
             android:textSize="20sp"
             android:textStyle="italic" />
 

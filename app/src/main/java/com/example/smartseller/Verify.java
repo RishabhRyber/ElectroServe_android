@@ -22,49 +22,51 @@ import java.util.concurrent.TimeUnit;
 public class Verify extends AppCompatActivity {
     private String Verificationid;
     private EditText editText;
-private FirebaseAuth mAuth;
+    private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify);
-mAuth=FirebaseAuth.getInstance();
-editText=findViewById(R.id.codeenter);
-        String phonenumber=getIntent().getStringExtra("phonenumber");
+        mAuth = FirebaseAuth.getInstance();
+        editText = findViewById(R.id.codeenter);
+        String phonenumber = getIntent().getStringExtra("phonenumber");
         sendVerificationCode(phonenumber);
         findViewById(R.id.submit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-String code=editText.getText().toString().trim();
-if(code.isEmpty()||code.length()<6){
-    editText.setError("Entercode...");
-    editText.requestFocus();
-    return;
-}
-verifycode(code);
+                String code = editText.getText().toString().trim();
+                if (code.isEmpty() || code.length() < 6) {
+                    editText.setError("Enter Valid Code...");
+                    editText.requestFocus();
+                    return;
+                }
+                verifycode(code);
             }
         });
     }
-    private void verifycode(String code){
-     PhoneAuthCredential credential=PhoneAuthProvider.getCredential(Verificationid,code);
-     signInWithCredential(credential);
+
+    private void verifycode(String code) {
+        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(Verificationid, code);
+        signInWithCredential(credential);
     }
 
     private void signInWithCredential(PhoneAuthCredential credential) {
-mAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-    @Override
-    public void onComplete(@NonNull Task<AuthResult> task) {
-        if(task.isSuccessful()){
-            Intent intent=new Intent(Verify.this,Passwordc.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(intent);
-        }else{
-            Toast.makeText(Verify.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
-        }
-    }
-});
+        mAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    Intent intent = new Intent(Verify.this, Passwordc.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(Verify.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 
-    private void sendVerificationCode(String number){
+    private void sendVerificationCode(String number) {
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
 
                 number,
@@ -74,25 +76,26 @@ mAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListe
                 mCallBack
         );
     }
-    private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallBack=new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+
+    private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallBack = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
         @Override
         public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
             super.onCodeSent(s, forceResendingToken);
-            Verificationid=s;
+            Verificationid = s;
         }
 
         @Override
         public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
-String code=phoneAuthCredential.getSmsCode();
-if(code!=null){
-    editText.setText(code);
-    verifycode(code);
-}
+            String code = phoneAuthCredential.getSmsCode();
+            if (code != null) {
+                editText.setText(code);
+                verifycode(code);
+            }
         }
 
         @Override
         public void onVerificationFailed(FirebaseException e) {
-            Toast.makeText(Verify.this,e.getMessage(),Toast.LENGTH_LONG).show();
+            Toast.makeText(Verify.this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
     };
 }

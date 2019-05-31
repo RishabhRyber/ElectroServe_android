@@ -1,5 +1,4 @@
 package com.example.smartseller;
-
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,17 +22,14 @@ public class Seller extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String number=regphoneemail.getText().toString().trim();
-if(number.isEmpty()|| number.length()<11) {
-    regphoneemail.setError("Number is required");
-    regphoneemail.requestFocus();
-    return;
-}
-    Intent intent=new Intent(getApplicationContext(),Verify.class);
-intent.putExtra("phonenumber",number);
-startActivity(intent);
-
-
-
+            if(number.isEmpty()|| number.length()<10) {
+                regphoneemail.setError("Number is required");
+                regphoneemail.requestFocus();
+                return;
+            }
+            Intent intent=new Intent(getApplicationContext(),identify_code_customer.class);
+            intent.putExtra("phonenumber",number);
+            startActivity(intent);
             }
         });
     }

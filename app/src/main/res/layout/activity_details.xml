@@ -6,26 +6,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Details">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PRODUCTS SERVICED BY YOU"
+        android:text="TYPES OF SERVICING"
         android:textSize="40sp"
-        android:textStyle="bold"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="TYPE OF SERVICING"
-        android:textStyle="bold"
-        android:textSize="30sp" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/maintenance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="MAINTENANCE OF EQUIPMENT"
+        android:text="MAINTENANCE AND REPAIRING"
         android:textSize="20sp"
         android:textStyle="italic" />
 
@@ -34,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="SERVICING OF EQUIPMENT"
+        android:text="SPARE PARTS"
         android:textSize="20sp"
         android:textStyle="italic" />
 

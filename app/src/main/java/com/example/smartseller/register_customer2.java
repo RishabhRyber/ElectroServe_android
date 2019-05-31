@@ -3,11 +3,11 @@ package com.example.smartseller;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class register_customer extends AppCompatActivity {
+public class register_customer2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_customer);
+        setContentView(R.layout.activity_register_customer2);
     }
 }

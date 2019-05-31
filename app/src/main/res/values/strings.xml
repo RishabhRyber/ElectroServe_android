@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Smartseller</string>
+    <string name="title_activity_register_customer">register_customer</string>
 </resources>

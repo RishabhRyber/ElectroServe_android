@@ -18,6 +18,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.smartseller.identify_code_customer" />
+        <activity android:name="com.example.smartseller.register_customer" />
+        <activity android:name="com.example.smartseller.register_customer2" />
+        <activity android:name="com.example.smartseller.loginCustomer" />
         <activity android:name="com.example.smartseller.Verify" />
         <activity android:name="com.example.smartseller.MainActivity" />
         <activity android:name="com.example.smartseller.Passwordc" />

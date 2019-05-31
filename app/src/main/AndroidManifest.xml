@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Verify"></activity>
+        <activity android:name=".identify_code_customer"></activity>
+        <activity android:name=".register_customer" />
+        <activity android:name=".register_customer2" />
+        <activity android:name=".loginCustomer" />
+        <activity android:name=".Verify" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Passwordc" />
         <activity android:name=".Login" />
