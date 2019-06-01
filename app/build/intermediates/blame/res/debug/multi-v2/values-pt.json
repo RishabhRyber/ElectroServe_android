@@ -14,6 +14,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\e88b0416f844424a49eb0ef9c3d2b861\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,317",
+                        "endColumns": "58,46,155,106",
+                        "endOffsets": "109,156,312,419"
+                    },
+                    "to": {
+                        "startLines": "31,32,33,34",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "3030,3089,3136,3292",
+                        "endColumns": "58,46,155,106",
+                        "endOffsets": "3084,3131,3287,3394"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\2a0e3fe8b26cfdeb564e7e988d82b4e7\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2",

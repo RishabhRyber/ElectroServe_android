@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\e88b0416f844424a49eb0ef9c3d2b861\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,104,151,244",
+                        "endColumns": "48,46,92,69",
+                        "endOffsets": "99,146,239,309"
+                    },
+                    "to": {
+                        "startLines": "49,50,51,52",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5162,5211,5258,5351",
+                        "endColumns": "48,46,92,69",
+                        "endOffsets": "5206,5253,5346,5416"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",

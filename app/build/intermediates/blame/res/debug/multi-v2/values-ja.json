@@ -70,6 +70,23 @@
                         "endColumns": "180",
                         "endOffsets": "3945"
                     }
+                },
+                {
+                    "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\e88b0416f844424a49eb0ef9c3d2b861\\res\\values-ja\\values-ja.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,109,156,256",
+                        "endColumns": "53,46,99,81",
+                        "endOffsets": "104,151,251,333"
+                    },
+                    "to": {
+                        "startLines": "49,50,51,52",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5316,5370,5417,5517",
+                        "endColumns": "53,46,99,81",
+                        "endOffsets": "5365,5412,5512,5594"
+                    }
                 }
             ]
         }

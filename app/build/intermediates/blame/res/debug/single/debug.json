@@ -84,12 +84,12 @@
         "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\color\\abc_tint_default.xml"
     },
     {
-        "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
-        "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
+        "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
@@ -196,12 +196,12 @@
         "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\b46f2f28886975faf4b854d63a5194d8\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
-        "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
-        "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
         "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\b46f2f28886975faf4b854d63a5194d8\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -458,6 +458,10 @@
     {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
         "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\b46f2f28886975faf4b854d63a5194d8\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\layout_zxing_capture.xml.flat",
+        "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\e88b0416f844424a49eb0ef9c3d2b861\\res\\layout\\zxing_capture.xml"
     },
     {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
@@ -746,6 +750,10 @@
     {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_btn_colored_text_material.xml.flat",
         "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\color\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\layout_zxing_barcode_scanner.xml.flat",
+        "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\e88b0416f844424a49eb0ef9c3d2b861\\res\\layout\\zxing_barcode_scanner.xml"
     },
     {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
@@ -1538,6 +1546,10 @@
     {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\raw_zxing_beep.ogg.flat",
+        "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\e88b0416f844424a49eb0ef9c3d2b861\\res\\raw\\zxing_beep.ogg"
     },
     {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_text_color.xml.flat",

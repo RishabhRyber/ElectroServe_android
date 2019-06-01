@@ -38,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\e88b0416f844424a49eb0ef9c3d2b861\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,106,153,260",
+                        "endColumns": "50,46,106,71",
+                        "endOffsets": "101,148,255,327"
+                    },
+                    "to": {
+                        "startLines": "49,50,51,52",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5293,5344,5391,5498",
+                        "endColumns": "50,46,106,71",
+                        "endOffsets": "5339,5386,5493,5565"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\2a0e3fe8b26cfdeb564e7e988d82b4e7\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2",
