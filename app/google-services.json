@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "285927127147",
-    "firebase_url": "https://smartseller-6ff79.firebaseio.com",
-    "project_id": "smartseller-6ff79",
-    "storage_bucket": "smartseller-6ff79.appspot.com"
+    "project_number": "539701787234",
+    "firebase_url": "https://electroservedata.firebaseio.com",
+    "project_id": "electroservedata",
+    "storage_bucket": "electroservedata.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:285927127147:android:629dab38fdbafa43",
+        "mobilesdk_app_id": "1:539701787234:android:629dab38fdbafa43",
         "android_client_info": {
           "package_name": "com.example.smartseller"
         }
       },
       "oauth_client": [
         {
-          "client_id": "285927127147-l0j0lmfjr7nh4m2g8levm7a6eepalgap.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.smartseller",
-            "certificate_hash": "3832cf58adf667e3f37e5f7baa4c65f985ad87f5"
-          }
-        },
-        {
-          "client_id": "285927127147-pe78hhpcl21g0ueuqj2fa3k7vso2c8of.apps.googleusercontent.com",
+          "client_id": "539701787234-qdt4ue587im6l1vhu08e9ihpkimg76qd.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBnY4YBWY7UJ9gxOqT6B8j0ucO3xG-Ii0M"
+          "current_key": "AIzaSyDo8pPtccuQif90OvRA06ohAup_JcilgOw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "285927127147-pe78hhpcl21g0ueuqj2fa3k7vso2c8of.apps.googleusercontent.com",
+              "client_id": "539701787234-qdt4ue587im6l1vhu08e9ihpkimg76qd.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -16,18 +16,20 @@ public class Seller extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller);
+        finish();
+        startActivity(new Intent(this,Login.class));
         regphoneemail = findViewById(R.id.phoneemailreg);
         submitreg = findViewById(R.id.submitreg);
         submitreg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String number=regphoneemail.getText().toString().trim();
-            if(number.isEmpty()|| number.length()<10) {
-                regphoneemail.setError("Number is required");
+                if(number.isEmpty()|| number.length()!=10) {
+                regphoneemail.setError("Correct Number is required");
                 regphoneemail.requestFocus();
                 return;
             }
-            Intent intent=new Intent(getApplicationContext(),identify_code_customer.class);
+            Intent intent=new Intent(getApplicationContext(),Verify.class);
             intent.putExtra("phonenumber",number);
             startActivity(intent);
             }

@@ -1292,10 +1292,6 @@
         "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\2a0e3fe8b26cfdeb564e7e988d82b4e7\\res\\layout\\notification_template_custom_big.xml"
-    },
-    {
         "merged": "G:\\androidStuffs\\Smartseller\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
         "source": "C:\\Users\\Rishabh\\.gradle\\caches\\transforms-2\\files-2.1\\edc0e117e0c2beaa3c2066753ac3a3cf\\res\\drawable\\abc_ic_search_api_material.xml"
     },

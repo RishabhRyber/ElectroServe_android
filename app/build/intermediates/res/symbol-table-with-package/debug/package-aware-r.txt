@@ -1229,6 +1229,8 @@ id line1
 id line3
 id listMode
 id list_item
+id loginAsSellerTxtView
+id loginCustomerTxtView
 id loginid
 id maintenance
 id maintpart
@@ -1267,6 +1269,7 @@ id productID
 id progress_circular
 id progress_horizontal
 id radio
+id registerAsCustomerTxtView
 id repairdrop
 id right
 id right_icon
@@ -1299,6 +1302,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signupSellerTxtView
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1331,6 +1335,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView10
+id textView11
 id textView2
 id textView3
 id textView4
