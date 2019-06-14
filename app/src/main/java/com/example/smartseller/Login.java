@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -48,8 +47,34 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         firebaseAuth = FirebaseAuth.getInstance();
 
         if(firebaseAuth.getCurrentUser()!=null){
-            finish();
-            startActivity(new Intent(getApplicationContext(),identify_code_customer.class));
+            FirebaseUser user=firebaseAuth.getCurrentUser();
+            DatabaseReference mostafa =  databaseReference.child(user.getUid());
+
+            mostafa.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    acType = dataSnapshot.getValue(String.class);
+                    Log.i("status","string found "+acType);
+                    if (acType.equals("customer")){
+                        Log.i("status","string found "+acType);
+                        finish();
+                        startActivity(new Intent(getApplicationContext(),register_customer2.class));
+                    }
+                    else if(acType.equals("seller")){
+                        Log.i("status","string found "+acType);
+                        finish();
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    Toast.makeText(getApplicationContext(),"Login Failed",Toast.LENGTH_LONG);
+                    return;
+
+                }
+            });
+
         }
     }
 
@@ -102,7 +127,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                              }
                              else {
                                  finish();
-                                 startActivity(new Intent(getApplicationContext(),Details.class));
+                                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
                              }
 
                             return;

@@ -46,6 +46,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.smartseller.dummyActivity" />
         <activity android:name="com.example.smartseller.identify_code_customer" />
         <activity android:name="com.example.smartseller.register_customer" />
         <activity android:name="com.example.smartseller.register_customer2" />

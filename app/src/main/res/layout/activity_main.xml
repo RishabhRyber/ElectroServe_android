@@ -46,7 +46,29 @@ android:padding="10dp">
             android:layout_marginLeft="30dp"
             android:gravity="right"
             android:hint="Enter Name" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="ADDRESS" />
+
+        <EditText
+            android:id="@+id/addressInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:gravity="right"
+            android:hint="Enter Work Address" />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,15 +78,15 @@ android:padding="10dp">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:text="ADDRESS"/>
+            android:text="Contact Number" />
 
         <EditText
-            android:id="@+id/addressid"
+            android:id="@+id/contactNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
+            android:layout_marginLeft="100dp"
             android:gravity="right"
-            android:hint="Enter Work Address" />
+            android:hint="ContactNumber" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

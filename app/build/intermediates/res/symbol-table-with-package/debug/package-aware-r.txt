@@ -1103,7 +1103,6 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
-id Submit
 id aadharInput
 id action0
 id action_bar
@@ -1128,7 +1127,6 @@ id activity_chooser_view_content
 id add
 id addressInput
 id addressLabel
-id addressid
 id adharnumberid
 id adjust_height
 id adjust_width
@@ -1161,6 +1159,9 @@ id clip_vertical
 id codeenter
 id collapseActionView
 id confpassid
+id contactNumber
+id contactNumberInput
+id contactNumberLabel
 id container
 id content
 id contentPanel
@@ -1436,6 +1437,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_details
+layout activity_dummy
 layout activity_identify_code_customer
 layout activity_login
 layout activity_login_customer

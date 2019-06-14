@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -90,7 +89,7 @@ public class loginCustomer extends AppCompatActivity implements View.OnClickList
                                 }
                                 @Override
                                 public void onCancelled(DatabaseError databaseError) {
-                                    Toast.makeText(getApplicationContext(),"Login Failed",Toast.LENGTH_LONG);
+                                    Toast.makeText(getApplicationContext(),"Login Failed",Toast.LENGTH_LONG).show();
                                     return;
 
                                 }
@@ -98,12 +97,12 @@ public class loginCustomer extends AppCompatActivity implements View.OnClickList
                             if (!acType.equals("customer")){
                                 firebaseAuth.signOut();
                                 Log.i("demo","Passwordc khula" + acType);
-                                Toast.makeText(getApplicationContext(),"Please Signin as Seller",Toast.LENGTH_LONG);
+                                Toast.makeText(getApplicationContext(),"Please Signin as Seller",Toast.LENGTH_LONG).show();
                                 return;
                             }
                             else {
                                 finish();
-                                startActivity(new Intent(getApplicationContext(),identify_code_customer.class));
+                                startActivity(new Intent(getApplicationContext(),register_customer2.class));
                             }
 
                             return;
