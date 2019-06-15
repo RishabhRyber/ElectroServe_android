@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "278040548488",
+    "firebase_url": "https://electroserv-dc247.firebaseio.com",
+    "project_id": "electroserv-dc247",
+    "storage_bucket": "electroserv-dc247.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278040548488:android:05803281a6229c0b",
+        "android_client_info": {
+          "package_name": "com.example.electroserv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278040548488-6j3etks7l6h92s30qcscuqju4bb3m3g3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.electroserv",
+            "certificate_hash": "3832cf58adf667e3f37e5f7baa4c65f985ad87f5"
+          }
+        },
+        {
+          "client_id": "278040548488-24410hgv10lmcdk9ohcbp44q9ccvc91p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHtmBEFAE0_gqMiiYCcNYCOjiIcE_CbiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278040548488-24410hgv10lmcdk9ohcbp44q9ccvc91p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
