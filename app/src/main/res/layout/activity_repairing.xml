@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".Repairing">
 
@@ -129,8 +130,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
@@ -162,11 +163,12 @@
         </LinearLayout>
 
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PARTS SELECTED BY YOU"
         android:layout_marginTop="52dp"
-        android:textSize="25sp"/>
+        android:text="PARTS SELECTED BY YOU"
+        android:textSize="25sp" />
 
 </LinearLayout>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical"
-    android:background="#3B4FFF"
     tools:context=".MainActivity">
 
     <TextView
@@ -53,8 +53,8 @@
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="ENTER YOUR PHONE/EMAIL"
-        android:textColorHint="#100719"
         android:inputType="textPersonName"
+        android:textColorHint="#100719"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.22"

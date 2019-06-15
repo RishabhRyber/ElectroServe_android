@@ -110,11 +110,11 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Rishabh\.g
 	android:supportsRtl
 		ADDED from G:\androidStuffs\Smartseller\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from G:\androidStuffs\Smartseller\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from G:\androidStuffs\Smartseller\app\src\main\AndroidManifest.xml:11:9-37
 	android:roundIcon
-		ADDED from G:\androidStuffs\Smartseller\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from G:\androidStuffs\Smartseller\app\src\main\AndroidManifest.xml:12:9-43
 	android:icon
-		ADDED from G:\androidStuffs\Smartseller\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from G:\androidStuffs\Smartseller\app\src\main\AndroidManifest.xml:10:9-38
 	android:allowBackup
 		ADDED from G:\androidStuffs\Smartseller\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme

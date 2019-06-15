@@ -2,36 +2,72 @@
 <instant-run
     abi="x86"
     api-level="28"
-    build-mode="COLD"
+    build-mode="FULL"
     density="560dpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.4.1"
-    timestamp="1560490159565"
+    timestamp="1560572033389"
     token="525425422846695971"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="798" />
+        duration="3707" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="71" />
+        duration="36" />
     <task
         name="verifier"
-        duration="9" />
+        duration="85" />
 
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
     <artifact
         location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\androidStuffs\Smartseller\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1560489892593"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1560572033389"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="G:\androidStuffs\Smartseller\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
@@ -52,35 +88,26 @@
             location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
             location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="G:\androidStuffs\Smartseller\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1560490159565"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="G:\androidStuffs\Smartseller\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
     </build>
 
 </instant-run>

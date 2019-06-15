@@ -17,7 +17,7 @@ public class Seller extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller);
         finish();
-        startActivity(new Intent(this,Login.class));
+        startActivity(new Intent(this,loginCustomer.class));
         regphoneemail = findViewById(R.id.phoneemailreg);
         submitreg = findViewById(R.id.submitreg);
         submitreg.setOnClickListener(new View.OnClickListener() {
