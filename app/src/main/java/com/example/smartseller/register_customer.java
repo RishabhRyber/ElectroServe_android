@@ -71,6 +71,7 @@ public class register_customer extends AppCompatActivity {
                         databaseReference.child(user.getUid()).setValue(acType);
                         Log.i("email",user.getEmail());
                         firebaseAuth = FirebaseAuth.getInstance();
+                        firebaseAuth.signOut();
                         Toast.makeText(getApplicationContext(), "Registration Successful", Toast.LENGTH_SHORT).show();
                         SendUserToLogin();
                     } else {

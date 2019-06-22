@@ -74,7 +74,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
                 }
             });
-
         }
     }
 
@@ -114,15 +113,15 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                                 }
                                 @Override
                                 public void onCancelled(DatabaseError databaseError) {
-                                    Toast.makeText(getApplicationContext(),"Login Failed",Toast.LENGTH_LONG);
+                                    Toast.makeText(getApplicationContext(),"Login Failed",Toast.LENGTH_LONG).show();
                                     return;
 
                                 }
                             });
                             if (!acType.equals("seller")){
                                  firebaseAuth.signOut();
-                                Log.i("demo","Passwordc khula" + acType);
-                                Toast.makeText(getApplicationContext(),"Please Signin as Customer",Toast.LENGTH_LONG);
+                                Log.i("demo"," " + acType);
+                                Toast.makeText(getApplicationContext(),"Please Signin as Customer",Toast.LENGTH_LONG).show();
                                  return;
                              }
                              else {

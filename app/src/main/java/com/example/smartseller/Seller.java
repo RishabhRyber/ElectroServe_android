@@ -18,21 +18,7 @@ public class Seller extends AppCompatActivity {
         setContentView(R.layout.activity_seller);
         finish();
         startActivity(new Intent(this,loginCustomer.class));
-        regphoneemail = findViewById(R.id.phoneemailreg);
-        submitreg = findViewById(R.id.submitreg);
-        submitreg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String number=regphoneemail.getText().toString().trim();
-                if(number.isEmpty()|| number.length()!=10) {
-                regphoneemail.setError("Correct Number is required");
-                regphoneemail.requestFocus();
-                return;
-            }
-            Intent intent=new Intent(getApplicationContext(),Verify.class);
-            intent.putExtra("phonenumber",number);
-            startActivity(intent);
-            }
-        });
+
     }
+
 }

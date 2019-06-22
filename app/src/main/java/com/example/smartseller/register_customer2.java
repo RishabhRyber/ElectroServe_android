@@ -28,7 +28,7 @@ public class register_customer2 extends AppCompatActivity implements View.OnClic
     CheckBox IOTOwnerYes,IOTOwnerNo;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
-    DatabaseReference databaseReference;
+    DatabaseReference databaseReference,secDatabaseReference;
     CustomerClass customerClass;
 
     @Override
@@ -53,15 +53,13 @@ public class register_customer2 extends AppCompatActivity implements View.OnClic
                     startActivity(new Intent(getApplicationContext(),identify_code_customer.class));
                 }
             }
+
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Toast.makeText(getApplicationContext(),"Error occoured",Toast.LENGTH_LONG).show();
                 return;
             }
         });
-
-
-
 
         nameInput=findViewById(R.id.nameInput);
         contactNumberInput=findViewById(R.id.contactNumberInput);
@@ -71,6 +69,8 @@ public class register_customer2 extends AppCompatActivity implements View.OnClic
         IOTOwnerYes=findViewById(R.id.checkedTextViewYes);
         IOTOwnerNo=findViewById(R.id.checkedTextViewNo);
 
+        IOTOwnerNo.setOnClickListener(this);
+        IOTOwnerYes.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
 
     }
@@ -93,21 +93,45 @@ public class register_customer2 extends AppCompatActivity implements View.OnClic
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()){
                             Toast.makeText(getApplicationContext(),"Successfully Registred",Toast.LENGTH_LONG).show();
+                            //To ensure IOT device info is not asked if user don't use it
+                            if(!tempCustomer.usingIOTDevice) {
+                               setFakeIOTData();
+                            }
                             finish();
                             startActivity(new Intent(getApplicationContext(),identify_code_customer.class));
                         }
                     }
                 }
         );
-
-
     }
 
+
+    public void setFakeIOTData(){
+        secDatabaseReference = FirebaseDatabase.getInstance().getReference().child("productCode").child(firebaseUser.getUid());
+        secDatabaseReference.setValue("lol").addOnCompleteListener(
+                this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()){
+                            finish();
+                            startActivity(new Intent(getApplicationContext(),identify_code_customer.class));
+                        }else {
+                            setFakeIOTData();
+                        }
+                    }
+                }
+        );
+    }
 
 
     public void onClick(View view){
         if (view==submitBtn){
             registerCustomer();
         }
+        else if (view==IOTOwnerYes && IOTOwnerYes.isChecked())
+            IOTOwnerNo.setChecked(false);
+        else if (view == IOTOwnerNo &&IOTOwnerNo.isChecked() )
+            IOTOwnerYes.setChecked(false);
     }
+
 }

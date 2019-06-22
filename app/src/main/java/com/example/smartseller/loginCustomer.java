@@ -48,10 +48,35 @@ public class loginCustomer extends AppCompatActivity implements View.OnClickList
         firebaseAuth = FirebaseAuth.getInstance();
 
         if(firebaseAuth.getCurrentUser()!=null){
-            finish();
-            startActivity(new Intent(getApplicationContext(),register_customer2.class));
+            FirebaseUser user=firebaseAuth.getCurrentUser();
+            DatabaseReference mostafa =  databaseReference.child(user.getUid());
+
+            mostafa.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    acType = dataSnapshot.getValue(String.class);
+                    Log.i("status","string found "+acType);
+                    if (acType.equals("customer")){
+                        Log.i("status","string found "+acType);
+                        finish();
+                        startActivity(new Intent(getApplicationContext(),register_customer2.class));
+                    }
+                    else if(acType.equals("seller")){
+                        Log.i("status","string found "+acType);
+                        finish();
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+
+            });
         }
     }
+
 
     public void onClick(View view){
         if (view == login){

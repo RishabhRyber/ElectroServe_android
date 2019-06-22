@@ -3,6 +3,7 @@
     package="com.example.smartseller">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="com.android.hardware.Camera.focus" />
 
     <application
@@ -12,7 +13,7 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dummyActivity"></activity>
+        <activity android:name=".switchStatus"></activity>
         <activity android:name=".identify_code_customer" />
         <activity android:name=".register_customer" />
         <activity android:name=".register_customer2" />

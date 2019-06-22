@@ -1105,6 +1105,7 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id USBStatusTxtView
 id aadharInput
 id action0
 id action_bar
@@ -1179,9 +1180,13 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id deviceIDTxtView
+id deviceStatusTxtView
 id dimensions
 id direct
 id disableHome
+id editText
+id editText4
 id edit_query
 id emailpass
 id end
@@ -1213,6 +1218,7 @@ id homeAsUp
 id homenoid
 id homeyesid
 id horizontal
+id hrsInput
 id icon
 id icon_group
 id icon_only
@@ -1241,6 +1247,7 @@ id masked
 id media_actions
 id message
 id middle
+id minInput
 id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
@@ -1325,6 +1332,7 @@ id stretch
 id submenuarrow
 id submit
 id submitBtn
+id submitDeviceBtn
 id submit_area
 id submitid
 id submitreg
@@ -1340,6 +1348,9 @@ id textStart
 id textView
 id textView10
 id textView11
+id textView12
+id textView13
+id textView14
 id textView2
 id textView3
 id textView4
@@ -1368,6 +1379,7 @@ id transition_transform
 id uniform
 id unlabeled
 id up
+id usbStatusCheckBox
 id useLogo
 id vertical
 id view_offset_helper
@@ -1439,7 +1451,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_details
-layout activity_dummy
 layout activity_identify_code_customer
 layout activity_login
 layout activity_login_customer
@@ -1451,6 +1462,7 @@ layout activity_register_customer
 layout activity_register_customer2
 layout activity_repairing
 layout activity_seller
+layout activity_switch_status
 layout activity_verify
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1570,6 +1582,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_register_customer

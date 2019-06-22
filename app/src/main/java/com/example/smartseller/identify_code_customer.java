@@ -1,5 +1,6 @@
 package com.example.smartseller;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -31,6 +32,8 @@ public class identify_code_customer extends AppCompatActivity implements  View.O
     DatabaseReference databaseReference;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
+    Activity activity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +41,9 @@ public class identify_code_customer extends AppCompatActivity implements  View.O
         scanBtn = (Button)findViewById(R.id.scanBtn);
         submitBtn=findViewById(R.id.submitBtn);
         codeVal = (EditText)findViewById(R.id.productID);
+        activity = this;
         submitBtn.setOnClickListener(this);
+
         scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,10 +70,20 @@ public class identify_code_customer extends AppCompatActivity implements  View.O
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 code = dataSnapshot.getValue(String.class);
-                Log.i("info","Product details available");
-                if(code!=null){
+                Log.i("info","Product details available" +code);
+
+                if(code==null) {
+                    Toast.makeText(getApplicationContext(), "Good Start", Toast.LENGTH_SHORT).show();
+                }
+                else if(code.equals("lol")){
+                    Toast.makeText(getApplicationContext(), "You don't own a IOT device", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                else{
+                    Intent intent = new Intent(getApplicationContext(),switchStatus.class);
+                    intent.putExtra("deviceID",code);
                     finish();
-                    startActivity(new Intent(getApplicationContext(),dummyActivity.class));
+                    startActivity(intent);
                 }
             }
             @Override
@@ -77,8 +92,6 @@ public class identify_code_customer extends AppCompatActivity implements  View.O
                 return;
             }
         });
-
-
 
     }
 
@@ -94,25 +107,71 @@ public class identify_code_customer extends AppCompatActivity implements  View.O
         super.onActivityResult(requestCode, resultCode, data);
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
         codeVal.setText(result.getContents());
-        submitCode(result.getContents());
     }
 
 
-    void submitCode(String scannedCode){
-        code=scannedCode;
-        databaseReference.setValue(code).addOnCompleteListener(
+    void submitCode(final String scannedCode){
+        code = scannedCode;
+        databaseReference.setValue(code).addOnCompleteListener(this, new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful())
+                    sendSwitchStatus(code);
+            }
+        });
+    }
+
+
+//
+//    void submitCode(String scannedCode){
+//        code=scannedCode;
+//        databaseReference.setValue(code).addOnCompleteListener(
+//                this, new OnCompleteListener<Void>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<Void> task) {
+//                        if (task.isSuccessful()){
+////                            sendSwitchStatus(code);
+//                            DeviceStatus deviceStatus = new DeviceStatus();
+//                            deviceStatus.deviceID = code;
+//                            FirebaseDatabase.getInstance().getReference("DeviceStatus").child(code).setValue(deviceStatus).addOnCompleteListener( getApplicationContext(), new OnCompleteListener<Void>(){
+//
+//
+//                                public void onComplete(@Nullable Task<void> task){
+//                                    if (subTask.isSuccessful()) {
+//                                        Toast.makeText(getApplicationContext(), "Product ID Successfully Registered", Toast.LENGTH_LONG).show();
+//                                        finish();
+//                                        startActivity(new Intent(getApplicationContext(), switchStatus.class));
+//                                    }
+//                                }
+//
+//
+//                            });
+//
+//                        }
+//                    }
+//                }
+//        );
+//    }
+
+
+    void sendSwitchStatus(String code){
+        DeviceStatus deviceStatus = new DeviceStatus();
+        deviceStatus.deviceID = code;
+        FirebaseDatabase.getInstance().getReference("DeviceStatus").child(code).setValue(deviceStatus).addOnCompleteListener(
                 this, new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()){
-                            Toast.makeText(getApplicationContext(),"Product ID Successfully Entered",Toast.LENGTH_LONG).show();
+                        if (task.isSuccessful()) {
+                            Log.i("test","nvjjj");
+                            Toast.makeText(getApplicationContext(), "Product ID Successfully Entered", Toast.LENGTH_LONG).show();
                             finish();
-                            startActivity(new Intent(getApplicationContext(),dummyActivity.class));
+                            startActivity(new Intent(getApplicationContext(), switchStatus.class));
                         }
+                        else
+                            Log.i("test","avjjj");
                     }
                 }
         );
-
-
     }
+
 }
