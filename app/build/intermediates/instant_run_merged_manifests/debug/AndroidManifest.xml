@@ -41,7 +41,7 @@
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@drawable/logo"
-        android:label="ElectroServe"
+        android:label="ElectroServ"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:testOnly="true"

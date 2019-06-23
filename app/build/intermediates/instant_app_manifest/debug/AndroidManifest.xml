@@ -42,9 +42,10 @@
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@drawable/logo"
-        android:label="ElectroServe"
+        android:label="ElectroServ"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.smartseller.switchStatus" />
         <activity android:name="com.example.smartseller.identify_code_customer" />
@@ -109,6 +110,11 @@
         <meta-data
             android:name="android.support.VERSION"
             android:value="26.1.0" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.smartseller.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>
